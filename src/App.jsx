@@ -4,12 +4,12 @@ import { useState } from 'react'
 
 const App = () => {
 
-    const [todo,setTodo] = useState([{id:1,title:"kam karle bhai",isCompleted:false},])
+    const [todo,setTodo] = useState([])
 
   return (
     <> 
     <Create todo={todo} setTodo={setTodo}/>
-    <Read todo={todo}/>
+    <Read todo={todo} setTodo={setTodo}/>
     </>
   )
 }
